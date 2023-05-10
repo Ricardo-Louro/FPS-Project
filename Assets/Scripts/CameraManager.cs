@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraManager : MonoBehaviour
 {
+    private Camera cam;
     private GameObject player;
 
     [SerializeField]
@@ -23,6 +24,7 @@ public class Camera : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         player = GameObject.Find("Player");
+        cam = GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -40,5 +42,14 @@ public class Camera : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(-rotationX, rotationY, 0);
         player.transform.rotation = Quaternion.Euler(0, rotationY, 0);
+        
+        //Handle Aiming
+        Vector3 middleScreen = cam.ScreenToWorldPoint(new Vector3(Screen.width/2, Screen.height/2, cam.nearClipPlane));
+        
+        RaycastHit hit;
+        if (Physics.Raycast(middleScreen, transform.forward, out hit, 10f))
+        {
+            Debug.Log("Hit " + hit.collider.name);
+        };
     }
 }

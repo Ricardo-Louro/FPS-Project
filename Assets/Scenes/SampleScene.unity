@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 163929739}
   - component: {fileID: 163929738}
   m_Layer: 6
-  m_Name: Cube
+  m_Name: BigRedBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 924864680}
   - component: {fileID: 924864679}
   m_Layer: 6
-  m_Name: Cube (3)
+  m_Name: SmolBlueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 1174284814}
   - component: {fileID: 1174284813}
   m_Layer: 6
-  m_Name: Cube (1)
+  m_Name: SmolRedBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 1825478365}
   - component: {fileID: 1825478364}
   m_Layer: 6
-  m_Name: Cube (2)
+  m_Name: BigBlueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acbea123700a5a24b929670d54b02779, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1250
+  moveSpeed: 1000
 --- !u!1 &2062512833
 GameObject:
   m_ObjectHideFlags: 0
